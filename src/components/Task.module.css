@@ -1,0 +1,58 @@
+span{
+    margin-left: 0.5rem;
+    background:var(--gray-400);
+    color:var(--gray-200);
+    font-size: 0.75rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 999px;
+}
+.noTasks{
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.clipBoard{
+    font-size: 3.375rem;
+    margin-top: 4rem;
+    color:var(--gray-500)
+}
+.p1{
+    color:var(--gray-300);
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 140%;
+    margin-top: 1rem;
+}
+.p2{
+    color:var(--gray-300);
+    font-weight:lighter;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+.contentTask{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--gray-500);
+    border-radius: 8px;
+}
+.btnDeleteTask{
+    background-color: transparent;
+    border:none;
+    transition: 0.2s;
+    color: var(--gray-300);
+}
+.btnDeleteTask:hover {
+   
+    color:var(--red-500);
+
+
+}

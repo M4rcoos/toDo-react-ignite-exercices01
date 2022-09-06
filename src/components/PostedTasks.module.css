@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+.content{
+    width:min(736px, 100%)  ;
+
+}
+header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.createdTask{
+ color:var(--blue);
+ font-weight: bold;
+ font-size: 0.875rem;
+ font-family: 'Roboto', sans-serif;
+}
+.done{
+    color:var(--purple);
+    font-weight: bold;
+    font-size: 0.875rem;
+    font-family: 'Roboto', sans-serif;
+}

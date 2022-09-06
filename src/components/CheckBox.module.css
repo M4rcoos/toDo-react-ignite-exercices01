@@ -1,0 +1,62 @@
+.labelChekBox{
+    display: block;
+    position: relative;
+    width: 17px;
+    height: 17px;
+  
+}
+.checkBox{
+    opacity: 0;
+    width:0 ;
+    height: 0;
+}
+
+.checkMark{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    border-radius:50% ;
+    border:1px solid var(--blue);
+
+}
+.labelChekBox:hover input ~ .checkMark{
+    background-color: var(--gray-300);
+}
+.labelChekBox input:checked ~ .checkMark{
+    background-color: var(--purple-Dark);
+}
+.labelChekBox .checkMark::after{
+    content: '';
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1px;
+    width:4.69px;
+    height: 7.31px;
+    border: solid var(--white);
+    border-width: 0 1.5px 1.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-trasnform:rotate(45deg);
+    transform: rotate(45deg);
+}
+.labelChekBox input:checked ~ .checkMark:after{
+    display: block;
+}
+.labelChekBox .active  p {
+    text-decoration: line-through;
+}
+.p1{
+    margin-top: -17px;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight:  500;
+    line-height: 150%;
+    color:var(--white)
+}
+.content{
+  max-width:max-content;
+  
+}
